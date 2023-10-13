@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen y sonido</title>
+  <style>
+    /* Estilos para el contenedor de la imagen */
+    #image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+
+    /* Estilos para la imagen */
+    #image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="image-container">
+    <img id="image" src="lapichula.jpg" alt="Imagen">
+  </div>
+
+  <script>
+    // Crea un objeto Audio para reproducir el archivo de sonido
+    var audio = new Audio('lapadula_vuelve_a_los_brazos_que_te_amaron.mp3');
+
+    // Selecciona la imagen y agrega un evento de clic
+    var image = document.getElementById('image');
+    image.addEventListener('click', function() {
+      // Reproduce el archivo de sonido
+      audio.play();
+    });
+  </script>
+  <p><center>Dale click a lapadula pe no se como se hace pa que reproduzca automatico</center></p>
+</body>
+</html>
